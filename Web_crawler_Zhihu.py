@@ -41,7 +41,7 @@ def login_cookie():
     LOGIN_URL = 'https://www.zhihu.com/'
     driver.get(LOGIN_URL)
     time.sleep(5)
-    input("请登录后按 Enter")
+    input("press Enter after you login in")
     cookies = driver.get_cookies()
     jsonCookies = json.dumps(cookies)
     # cookie to login in
